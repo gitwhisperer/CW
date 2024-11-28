@@ -1,18 +1,18 @@
 #include <iostream>
 
 int main() {
-    float num1, num2, result;
+    float a, b, result;
     
     std::cout << "Enter first number: ";
-    std::cin >> num1;
+    std::cin >> a;
     std::cout << "Enter second number: ";
-    std::cin >> num2;
+    std::cin >> b;
 
     try {
-        if (num2 == 0) {
+        if (b == 0 || a == 0) {
             throw "Division by zero error";
         }
-        result = num1 / num2;
+        result = a / b;
         std::cout << "Result: " << result << std::endl;
     }
     catch (const char* msg) {
